@@ -19,7 +19,9 @@
         font-style: normal;
         font-size: 1.5em;
         color: #211E1F;
-        max-width: 1200px;
+        width: 1440px;
+        margin: 0;
+        padding: 0;
       }
 
       h1 {
@@ -47,18 +49,16 @@
         color: #883BF4;
       }
 
+      nav {
+        width: 1200px;
+        margin-left: 120px;
+        background-color: #211E1F;
+      }
+
       ul {
         list-style-type: none;
-        margin: 0;
-        position: fixed;
-        top: 0;
-        width: 1440px;
-        padding-left: 120px;
-        padding-right: 120px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        overflow: hidden;
         background-color: #211E1F;
+        padding-top: 18px;
       }
 
       ul li {
@@ -69,13 +69,34 @@
         display: block;
         color: white;
         text-align: center;
-        padding: 14px 16px;
         text-decoration: none;
+        margin-left: 30px;
+        padding: 10px 10px;
       }
 
       ul li a:hover {
         color: #883BF4;
         border: 2px solid #883BF4;
+      }
+
+      ul li a.active {
+        color: #883BF4;
+        border: 2px solid #883BF4;
+      }
+
+      .containernav {
+        background-color: #211E1F;
+        width: 100%;
+        height: 85px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .container1 {
+        margin-left: 120px;
+        margin-right: 120px;
+        background-color: red;
+        align-items: center;
       }
 
       .container2 {
@@ -91,13 +112,19 @@
     </style>
   </head>
   <body>
-    <ul>
-      <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_float">HOME</a></li>
-      <li><a href="story.html">STORY</a></li>
-      <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
-      <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
-    </ul>
-    <h1>Hello World Wide Web!</h1>
-    <h2>THE WORLD</h2>
+    <div class="containernav">
+      <nav>
+        <ul>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_float">HOME</a></li>
+          <li><a href="story.html">STORY</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container1">
+      <h1>Hello World Wide Web!</h1>
+      <h2>THE WORLD</h2>
+    </div>
   </body>
 </html>
