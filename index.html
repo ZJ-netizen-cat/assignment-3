@@ -20,7 +20,6 @@
         font-size: 1.5em;
         color: #211E1F;
         width: 1440px;
-        margin: 0;
         padding: 0;
       }
 
@@ -29,6 +28,7 @@
         font-weight: 400;
         font-style: normal;
         font-size: 5.33em;
+        text-align: center;
       }
 
       h2 {
@@ -43,7 +43,7 @@
       h3 {
         font-family: "Sofia Sans", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 400;
+        font-weight: 700;
         font-style: normal;
         font-size: 2em;
         color: #883BF4;
@@ -96,25 +96,50 @@
         background-color: #211E1F;
         width: 100%;
         height: 85px;
-        margin-top: 15px;
-        margin-bottom: 15px;
+      }
+
+      .containertitle {
+        background-color: #AFAFAF;
+        padding-top: 200px;
+        padding-bottom: 20px;
+        margin-bottom: 100px;
+        width: 100%;
+      }
+
+      .containerbody {
+        background-image: url("city.png");
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        width: 100%;
+      }
+
+      .containersub {
+        padding: 0.1px;
+        background-color: #211E1F;
+        text-align: center;
+        margin-bottom: 100px;
       }
 
       .container1 {
         margin-left: 120px;
         margin-right: 120px;
-        background-color: red;
         align-items: center;
       }
 
       .container2 {
+        margin-left: 120px;
+        margin-right: 120px;
         display: grid;
         grid-template-columns: 50% 50%;
         gap: 100px;
+        align-content: center;
       }
 
       .grid-item {
+        display: inline;
         min-height: 150px;
+        max-width: 550px;
         gap: 30px;
       }
     </style>
@@ -133,9 +158,30 @@
         </ul>
       </nav>
     </div>
+    <div class="containertitle">
+      <h1>DAYBREAK</h1>
+    </div>
     <div class="container1">
-      <h1>Hello World Wide Web!</h1>
+      <div class="containersub">
+        <h3 style="color:#FFFFFF">“That is what it means to be a hero!”</h3>
+      </div>
+      <p>In this universe of villains and heroes, almost everyone is born with some kind of superpower. Some use their special abilities for evil, but more use theirs for good, establishing their careers as professional champions of justice. Their performance and popularity determines their rankings in the hero industry, but each and everyone’s goal is the same: to help others.</p>
+      <p>Haven, one of the very few individuals born without any powers, is no different. Despite her perceived disadvantage, she is determined to find a place for herself in a world that would shun her, no matter how much she has to fight for it. Her goal...</p>
+      <h3>To be the #1 hero!</h3>
+    </div>
+    <div class="containerbody">
       <h2>THE WORLD</h2>
+      <div class="container2">
+        <div class="grid-item">
+          <svg width="550" height="440" xmlns="http://www.w3.org/2000/svg">
+            <rect width="550" height="440" x="10" y="10" rx="0" ry="0" fill="#AFAFAF" />
+          </svg>
+        </div>
+        <div class="grid-item">
+        <p style="color:#FFFFFF">A long time ago, humans evolved, and now majority of this world’s population are born with superpowers. First, villains had emerged from the fray, but heroes had countered them soon after, developing into a recognized field for the purpose of making the world a better place.</p>
+        <p style="color:#FFFFFF">Each hero is ranked based on their performance, but popularity is not ignored. Nearly all strive for the coveted position at the very top of the highest ranking, the absolute title of number one.</p>
+      </div>
+      </div>
     </div>
   </body>
 </html>
