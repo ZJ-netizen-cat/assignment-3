@@ -19,7 +19,7 @@
         font-style: normal;
         font-size: 1.5em;
         color: #211E1F;
-        width: 1440px;
+        max-width: 1440px;
         padding: 0;
       }
 
@@ -77,12 +77,14 @@
 
       ul li a:hover {
         color: #883BF4;
-        border: 2px solid #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
       }
 
       ul li a.active {
         color: #883BF4;
         border: 2px solid #883BF4;
+        font-weight: 600;
       }
 
       #name {
@@ -90,6 +92,25 @@
         font-weight: 400;
         font-style: normal;
         font-size: 1.5em;
+      }
+
+      .button a {
+        background-color: #883BF4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .button a:hover {
+        background-color: white;
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
       }
 
       .containernav {
@@ -100,6 +121,7 @@
 
       .containertitle {
         background-color: #AFAFAF;
+        background-image: url("city.png");
         padding-top: 200px;
         padding-bottom: 20px;
         margin-bottom: 100px;
@@ -111,7 +133,8 @@
         padding-top: 100px;
         padding-bottom: 100px;
         margin-bottom: 100px;
-        width: 100%;
+        padding-left: 120px;
+        padding-right: 120px;
       }
 
       .containersub {
@@ -128,20 +151,33 @@
       }
 
       .container2 {
-        margin-left: 120px;
-        margin-right: 120px;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
         gap: 100px;
         align-content: center;
       }
+      
+      .container3 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 100px;
+        align-items: center;
+        max-width: 1200px;
+      }
 
-      .grid-item {
-        display: inline;
+      .grid-item-content {
         min-height: 150px;
         max-width: 550px;
         gap: 30px;
       }
+      
+      .grid-item-hero {
+        background-color: red;
+        padding: 30px;
+        gap: 30px;
+        align-content: center;
+      }
+      
     </style>
   </head>
   <body>
@@ -172,15 +208,30 @@
     <div class="containerbody">
       <h2>THE WORLD</h2>
       <div class="container2">
-        <div class="grid-item">
+        <div class="grid-item-content">
           <svg width="550" height="440" xmlns="http://www.w3.org/2000/svg">
             <rect width="550" height="440" x="10" y="10" rx="0" ry="0" fill="#AFAFAF" />
           </svg>
         </div>
-        <div class="grid-item">
-        <p style="color:#FFFFFF">A long time ago, humans evolved, and now majority of this world’s population are born with superpowers. First, villains had emerged from the fray, but heroes had countered them soon after, developing into a recognized field for the purpose of making the world a better place.</p>
-        <p style="color:#FFFFFF">Each hero is ranked based on their performance, but popularity is not ignored. Nearly all strive for the coveted position at the very top of the highest ranking, the absolute title of number one.</p>
+        <div class="grid-item-content">
+          <p style="color:#FFFFFF">A long time ago, humans evolved, and now majority of this world’s population are born with superpowers. First, villains had emerged from the fray, but heroes had countered them soon after, developing into a recognized field for the purpose of making the world a better place.</p>
+          <p style="color:#FFFFFF">Each hero is ranked based on their performance, but popularity is not ignored. Nearly all strive for the coveted position at the very top of the highest ranking, the absolute title of number one.</p>
+          <div class="button"><a href="story.html">LEARN MORE</a></div>
+        </div>
       </div>
+    </div>
+    <div class="container1">
+    <h2 style="text-align:right">OUR HEROES</h2>
+      <div class="container3">
+        <div class="grid-item-hero">
+          <p>HAVEN</p>
+        </div>
+        <div class="grid-item-hero">
+          <p>VIOLET</p>
+        </div>
+        <div class="grid-item-hero">
+          <p>LUMEN</p>
+        </div>
       </div>
     </div>
   </body>
