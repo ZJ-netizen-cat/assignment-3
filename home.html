@@ -98,18 +98,23 @@
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 100px;
-        align-items: center;
+        align-content: center;
         background-color: #211E1F;
         color: white;
-        padding: 30px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
       }
 
       footer ul {
         list-style-type: none;
+        padding: 0;
       }
 
       footer ul li {
         color: #FFFFFF;
+        margin-bottom: 30px;
       }
 
       footer ul li a {
@@ -127,7 +132,6 @@
 
       footer ul li a.active {
         color: #883BF4;
-        border: 3px solid #883BF4;
         font-weight: 600;
       }
 
@@ -226,7 +230,7 @@
           <div id="name">
             <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
           </div>
-          <li><a a class="active" href="home.html">HOME</a></li>
+          <li><a class="active" href="home.html">HOME</a></li>
           <li><a href="story.html">STORY</a></li>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
@@ -274,16 +278,24 @@
       </div>
     </div>
     <footer>
-      <div class="grid-item-content">
+      <div class="grid-item-content" style="align-content:center">
         <img src="city.png" alt="description of image" height="250px">
       </div>
       <div class="grid-item-content">
         <p style="font-size:1.5em">Navigation</p>
         <ul>
-          <li><a href="home.html">HOME</a></li>
+          <li><a class="active" href="home.html">HOME</a></li>
           <li><a href="story.html">STORY</a></li>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="grid-item-content">
+        <p style="font-size:1.5em">Contact</p>
+        <ul>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">j43zhan@uwaterloo.ca</li>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">(1)647-891-1288</li>
+          <li>Find these characters on<a href="https://artfight.net/~Jazzies-Stuff"><u>Artfight!</u></a></li>
         </ul>
       </div>
     </footer>
