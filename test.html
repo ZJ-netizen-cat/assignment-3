@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <title>DayBreak Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        color: #211E1F;
+        max-width: 1440px;
+        padding: 0;
+      }
+
+      h1 {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5.33em;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4em;
+        color: #883BF4;
+      }
+
+      h3 {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2em;
+        color: #883BF4;
+      }
+
+      nav {
+        width: 1440px;
+        background-color: #211E1F;
+        position: fixed;
+      }
+
+      nav ul {
+        margin-left: 120px;
+        margin-right: 120px;
+        list-style-type: none;
+        background-color: #211E1F;
+        padding-bottom: 55px;
+      }
+
+      nav ul li {
+        float: right;
+        color: #FFFFFF;
+      }
+
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 30px;
+        padding: 10px;
+        border: 3px solid #211E1F;
+      }
+
+      nav ul li a:hover:not(.active) {
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
+      }
+
+      nav ul li a.active {
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
+      }
+
+      .dropbtn {
+        background-color: #211E1F;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #883BF4;
+      }
+
+      .dropdown {
+        position: relative;
+        top: 3px;
+        left: 15px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 950px;
+        background-color: #211E1F;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #883BF4;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .btnshow {
+        background-color: #883BF4
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containernav">
+      <nav>
+        <ul>
+          <div id="name">
+            <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
+          </div>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
+          <div class="dropdown">
+            <li id="myBtn" class="dropbtn">CAST</li>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">HAVEN</a>
+              <a href="#">VIOLET</a>
+              <a href="#">LUMEN</a>
+            </div>
+          </div>
+          <li><a href="story.html">STORY</a></li>
+          <li><a class="active" href="home.html">HOME</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script>
+      // Get the button, and when the user clicks on it, execute myFunction
+      document.getElementById("myBtn").onclick = function () {
+        myFunction()
+      };
+
+      /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+      function myFunction () {
+        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myBtn").classList.toggle("btnshow")
+      }
+    </script>
+  </body>
+</html>

@@ -94,6 +94,54 @@
         font-style: normal;
         font-size: 1.5em;
       }
+      
+      .dropbtn {
+        background-color: #211E1F;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #883BF4;
+      }
+
+      .dropdown {
+        position: relative;
+        top: 3px;
+        left: 15px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 958px;
+        background-color: #211E1F;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #883BF4;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .btnshow {
+        background-color: #883BF4
+      }
 
       footer {
         display: grid;
@@ -233,9 +281,16 @@
             <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
           </div>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
-          <li><a class="active" href="story.html">STORY</a></li>
-          <li><a href="home.html">HOME</a></li>
+          <div class="dropdown">
+            <li id="myBtn" class="dropbtn">CAST</li>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">HAVEN</a>
+              <a href="#">VIOLET</a>
+              <a href="#">LUMEN</a>
+            </div>
+          </div>
+          <li><a href="story.html">STORY</a></li>
+          <li><a class="active" href="home.html">HOME</a></li>
         </ul>
       </nav>
     </div>
@@ -291,5 +346,15 @@
         </ul>
       </div>
     </footer>
+    <script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myBtn").classList.toggle("btnshow")
+}
+</script>
   </body>
 </html>

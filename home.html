@@ -79,9 +79,7 @@
       }
 
       nav ul li a:hover:not(.active) {
-        color: #883BF4;
-        border: 3px solid #883BF4;
-        font-weight: 600;
+        background-color: #883BF4
       }
 
       nav ul li a.active {
@@ -89,24 +87,40 @@
         border: 3px solid #883BF4;
         font-weight: 600;
       }
+      
+      #name {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+      }
 
       .dropbtn {
         background-color: #211E1F;
         color: white;
+        padding: 10px;
         cursor: pointer;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #883BF4;
       }
 
       .dropdown {
         position: relative;
+        top: 3px;
+        left: 15px;
       }
 
       .dropdown-content {
         display: none;
         position: absolute;
-        left: 950px;
-        top: 52px;
+        top: 50px;
+        left: 958px;
         background-color: #211E1F;
-        min-width: 200px;
+        min-width: 160px;
+        overflow: auto;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       }
 
@@ -116,32 +130,17 @@
         text-decoration: none;
         display: block;
       }
-      
-      .dropdown-content a:hover {
-  background-color: #883BF4;
-}
 
-      .dropdown:hover .dropdown-content {
+      .dropdown-content a:hover {
+        background-color: #883BF4;
+      }
+
+      .show {
         display: block;
       }
-      
-     .dropdown:hover:not(.active) {
-        color: #883BF4;
-       background-color: #883BF4;
-        font-weight: 600;
-      }
 
-      .dropdown a.active {
-        color: #883BF4;
-        background-color: #883BF4;
-        font-weight: 600;
-      }
-
-      #name {
-        font-family: "Audiowide", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 1.5em;
+      .btnshow {
+        background-color: #883BF4
       }
 
       footer {
@@ -283,8 +282,8 @@
           </div>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
           <div class="dropdown">
-            <li class="dropbtn"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
-            <div class="dropdown-content">
+            <li id="myBtn" class="dropbtn">CAST</li>
+            <div id="myDropdown" class="dropdown-content">
               <a href="#">HAVEN</a>
               <a href="#">VIOLET</a>
               <a href="#">LUMEN</a>
@@ -360,5 +359,15 @@
         </ul>
       </div>
     </footer>
+ <script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myBtn").classList.toggle("btnshow")
+}
+</script>
   </body>
 </html>
