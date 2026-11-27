@@ -55,49 +55,241 @@
         background-color: #211E1F;
       }
 
-      ul {
+      nav ul {
         list-style-type: none;
         background-color: #211E1F;
         padding-top: 18px;
       }
 
-      ul li {
+      nav ul li {
         float: right;
         color: #FFFFFF;
       }
 
-      ul li a {
+      nav ul li a {
         display: block;
         color: white;
         text-align: center;
         text-decoration: none;
         margin-left: 30px;
         padding: 10px 10px;
+        border: 3px solid #211E1F;
       }
 
-      ul li a:hover {
+      nav ul li a:hover:not(.active) {
         color: #883BF4;
         border: 3px solid #883BF4;
         font-weight: 600;
       }
-      
-      ul li a:hover:not(.active) {
-  background-color: #111111;
-}
 
-      ul li a.active {
+      nav ul li a.active {
         color: #883BF4;
-        border: 2px solid red;
+        border: 3px solid #883BF4;
         font-weight: 600;
+      }
+
+      #name {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 100px;
+        align-content: center;
+        background-color: #211E1F;
+        color: white;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      footer ul li {
+        color: #FFFFFF;
+        margin-bottom: 30px;
+      }
+
+      footer ul li a {
+        display: block;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+
+      footer ul li a:hover:not(.active) {
+        color: #883BF4;
+        font-weight: 600;
+      }
+
+      footer ul li a.active {
+        color: #883BF4;
+        font-weight: 600;
+      }
+
+      .button a {
+        background-color: #883BF4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .button a:hover {
+        background-color: white;
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
+      }
+
+      .containernav {
+        background-color: #211E1F;
+        width: 100%;
+        height: 85px;
+      }
+
+      .containertitle {
+        background-color: #AFAFAF;
+        background-image: url("city.png");
+        padding-top: 200px;
+        padding-bottom: 20px;
+        margin-bottom: 100px;
+        width: 100%;
+      }
+      
+      .containersub {
+        padding: 0.1px;
+        background-color: #211E1F;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+
+      .containerbody {
+        background-image: url("city.png");
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        padding-left: 120px;
+        padding-right: 120px;
+      }
+
+      .container1 {
+        margin-left: 120px;
+        margin-right: 120px;
+        align-items: center;
+        margin-bottom: 100px;
+      }
+
+      .container2 {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 100px;
+        align-content: center;
+        margin-bottom: 100px;
+      }
+
+      .container3 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 100px;
+        align-items: center;
+        max-width: 1200px;
+        margin-bottom: 100px;
+      }
+
+      .grid-item-content {
+        min-height: 150px;
+        max-width: 550px;
+        gap: 30px;
+      }
+
+      .grid-item-hero {
+        background-color: white;
+        min-height: 150px;
+        padding: 30px;
+        gap: 30px;
+        text-align: center;
       }
     </style>
   </head>
+  <body>
+    <div class="containernav">
+      <nav>
+        <ul>
+          <div id="name">
+            <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
+          </div>
+          <li><a href="home.html">HOME</a></li>
+          <li><a class="active" href="story.html">STORY</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="containertitle">
+      <h1>STORY</h1>
+    </div>
+    <div class="containerbody">
+      <h2>SUMMARY</h2>
+      <div class="container2">
+        <div class="grid-item-content">
+        <h3>A long time ago, humans evolved, and now majority of this world’s population are born with powers.</h3>
+          <p>First, villains had emerged from the fray, using their powers for evil, but heroes had countered them soon after, developing into a recognized industry for the purpose of making the world a better place. Programs were created to train potential heroes, open to anyone willing to join, or so they say.</p>
+        </div>
+        <div class="grid-item-content">
+          <p>f</p>
+        </div>
+        <div class="grid-item-content">
+          <p>f</p>
+        </div>
+        <div class="grid-item-content">
+        <h3>Haven is one such individual.</h3>
+          <p>She is passionate about helping others, partially because of her past, but mainly because it is simply her nature. Her lifelong goal is to be the highest-ranked hero, so she can help the most people possible.</p>
+          <p>However, because of her history and lack of powers, she is rejected from the industry. In an interview with a certain higher-up, she will allow Haven into the program she runs if Haven participates and performs well in an upcoming tournament event for trainees from different hero program; her appearance as an underdog must be impressive enough so admitting her into the program will be treated as a magnanimous decision and boost their public status.</p>
+        </div>
+        <div class="grid-item-content">
+          <p>During the tournament, Haven fights in the quarterfinals against</p>
+          <h3>Violet, a stoic trainee whose few words are as sharp as her sword</h3>
+          <p>and would be annoyingly haughty if she didn’t have the prowess to support her pride, and</p>
+          <h3>Lumen, the the industry’s star trainee</h3>
+          <p>who is widely judged to be a steep contender for the number one title. She loses to him, but her opponents and even other participants vouch for her to join the program, so the higher-up relents, and allows Haven to join her hero training program.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="grid-item-content" style="align-content:center">
+        <img src="city.png" alt="description of image" height="250px">
+      </div>
+      <div class="grid-item-content">
+        <p style="font-size:1.5em">Navigation</p>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a class="active" href="story.html">STORY</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
+        </ul>
+      </div>
+      <div class="grid-item-content">
+        <p style="font-size:1.5em">Contact</p>
+        <ul>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">j43zhan@uwaterloo.ca</li>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">(1)647-891-1288</li>
+          <li>Find these characters on<a href="https://artfight.net/~Jazzies-Stuff"><u>Artfight!</u></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
-<body>
-  <nav>
-    <ul>
-      <li><a href="home.html">home</a></li>
-    </ul>
-  </nav>
-  <h1>story</h1>
-</body>
