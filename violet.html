@@ -28,7 +28,7 @@
         font-weight: 400;
         font-style: normal;
         font-size: 5.33em;
-        text-align: center;
+        text-align: right;
       }
 
       h2 {
@@ -47,6 +47,13 @@
         font-style: normal;
         font-size: 2em;
         color: #883BF4;
+      }
+
+      h4 {
+        background-color: #211E1F;
+        color: white;
+        font-weight: 600;
+        padding: 10px 15px;
       }
 
       nav {
@@ -79,7 +86,8 @@
       }
 
       nav ul li a:hover:not(.active) {
-        background-color: #883BF4
+        background-color: #883BF4;
+        color: white;
       }
 
       nav ul li a.active {
@@ -87,7 +95,7 @@
         border: 3px solid #883BF4;
         font-weight: 600;
       }
-      
+
       #name {
         font-family: "Audiowide", sans-serif;
         font-weight: 400;
@@ -105,6 +113,7 @@
       .dropbtn:hover,
       .dropbtn:focus {
         background-color: #883BF4;
+        color: white;
       }
 
       .dropdown {
@@ -140,13 +149,14 @@
       }
 
       .btnshow {
-        background-color: #883BF4
+        background-color: #883BF4;
+        color: white;
       }
 
       footer {
         display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 100px;
+        grid-template-columns: auto auto;
+        gap: auto;
         align-content: center;
         background-color: #211E1F;
         color: white;
@@ -154,6 +164,9 @@
         padding-right: 120px;
         padding-top: 30px;
         padding-bottom: 30px;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 30px;
       }
 
       footer ul {
@@ -164,27 +177,22 @@
       footer ul li {
         color: #FFFFFF;
         margin-bottom: 30px;
+        display: block;
       }
 
       footer ul li a {
-        display: block;
         color: white;
         text-align: left;
         text-decoration: none;
         margin-bottom: 30px;
       }
 
-      footer ul li a:hover:not(.active) {
+      footer ul li a:hover {
         color: #883BF4;
         font-weight: 600;
       }
 
-      footer ul li a.active {
-        color: #883BF4;
-        font-weight: 600;
-      }
-
-      .button a {
+      /*.button a {
         background-color: #883BF4;
         border: none;
         color: white;
@@ -201,21 +209,12 @@
         color: #883BF4;
         border: 3px solid #883BF4;
         font-weight: 600;
-      }
+      }*/
 
       .containernav {
         background-color: #211E1F;
         width: 100%;
         height: 85px;
-      }
-
-      .containertitle {
-        background-color: #AFAFAF;
-        background-image: url("city.png");
-        padding-top: 200px;
-        padding-bottom: 20px;
-        margin-bottom: 100px;
-        width: 100%;
       }
 
       .containerbody {
@@ -225,6 +224,7 @@
         margin-bottom: 100px;
         padding-left: 120px;
         padding-right: 120px;
+        color: white;
       }
 
       .containersub {
@@ -243,19 +243,22 @@
 
       .container2 {
         display: grid;
-        grid-template-columns: auto auto;
-        gap: 100px;
+        margin-right: 120px;
+        max-width: 1200px;
+        grid-template-columns: 50% 50%;
+        column-gap: 100px;
         align-content: center;
         margin-bottom: 100px;
       }
 
       .container3 {
         display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 100px;
+        grid-template-rows: auto auto auto;
+        gap: 30px;
         align-items: center;
         max-width: 1200px;
-        margin-bottom: 100px;
+        margin-left: 120px;
+        margin-right: 120px;
       }
 
       .grid-item-content {
@@ -280,53 +283,84 @@
           <div id="name">
             <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
           </div>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
           <div class="dropdown">
-            <li id="myBtn" class="dropbtn">CAST</li>
+            <li id="myBtn" class="dropbtn" style="border:3px solid #883BF4">CAST</li>
             <div id="myDropdown" class="dropdown-content">
-              <a href="#">HAVEN</a>
-              <a href="#">VIOLET</a>
-              <a href="#">LUMEN</a>
+              <a class="active" href="haven.html">HAVEN</a>
+              <a href="violet.html">VIOLET</a>
+              <a href="lumen.html">LUMEN</a>
             </div>
           </div>
           <li><a href="story.html">STORY</a></li>
-          <li><a class="active" href="home.html">HOME</a></li>
+          <li><a href="home.html">HOME</a></li>
         </ul>
       </nav>
     </div>
-    <div class="containertitle">
-      <h1>DAYBREAK</h1>
+    <div class="containerbody">
+      <div class="container3">
+        <div class="grid-item-content">
+          <h4 style="width:4.9em;background-color:#883BF4">COVERT</h4>
+          <h4 style="width:7.4em;background-color:#883BF4">PRIDEFUL</h4>
+          <h4 style="width:4.2em;background-color:#883BF4">SWORDSMAN</h4>
+        </div>
+      </div>
+      <h1>VIOLET</h1>
+      <h4 style="text-align:right">HERO NAME</h4>
+      <h3 style="font-size:4em;text-align:right">BASTION</h3>
     </div>
     <div class="container1">
       <div class="containersub">
-        <h3 style="color:#FFFFFF">“That is what it means to be a hero!”</h3>
+        <h3 style="color:#FFD1C2">The embodiment of a true hero</h3>
       </div>
-      <p>In this universe of villains and heroes, almost everyone is born with some kind of superpower. Some use their special abilities for evil, but more use theirs for good, establishing their careers as professional champions of justice. Their performance and popularity determines their rankings in the hero industry, but each and everyone’s goal is the same: to help others.</p>
-      <p>Haven, one of the very few individuals born without any powers, is no different. Despite her perceived disadvantage, she is determined to find a place for herself in a world that would shun her, no matter how much she has to fight for it. Her goal...</p>
-      <h3>To be the #1 hero!</h3>
-    </div>
-    <div class="containerbody">
-      <h2>THE WORLD</h2>
+       <h2>ABOUT</h2>
       <div class="container2">
         <div class="grid-item-content">
-          <svg width="550" height="440" xmlns="http://www.w3.org/2000/svg">
-            <rect width="550" height="440" x="10" y="10" rx="0" ry="0" fill="#AFAFAF" />
-          </svg>
+          <h4>POWER</h4>
+          <p>None</p>
+          <h4>ABILITIES</h4>
+          <p>Various forms of martial arts (boxing, judo, taekwondo, etc.), mean right hook</p>
+          <h4>LIKES</h4>
+          <p>Training, jewelry (particularly earrings), cool jackets, big plushies</p>
+          <h4>DISLIKES</h4>
+          <p>Carelessness, being alone, cooking</p>
+        </div>
+        <div class="grid-item-content" style="align-content:center">
+          <img src="city.png" alt="description of image" width="550">
+        </div>
+      </div>
+      <img src="havensheet.png" alt="description of image" width="100%">
+      <h3>Outgoing, openhearted, extremely friendly to the few who approach rather than avoid her.</h3>
+      <p>Haven is the embodiment of a true hero stripped down to its base. As stubbornly determined as any other typical shounen protagonist, she hopes to be at least half as inspiring. She wants to help people above all else, even if they may be criminals/villains. Loneliness can be turn anyone into a monster, but having even one person that listens, that you can rely on, that fights for you no matter what, can be a saving grace.</p>
+      <p>Although she leans towards more brutal methods by necessity, she heavily disapproves of unnecessary violence, using her fists as a last resort. Haven can be selfish at times, prioritizing her own goals over anything else, and will fight all-out for it, since she thinks it is the better outcome, so thank god that it usually is.</p>
+    </div>
+    <div class="containerbody">
+      <h2 style="text-align:right">BACKSTORY</h2>
+      <div class="container2">
+        <div class="grid-item-content">
+          <h3>When her powers fail to manifest as a child,</h3>
+          <p>Haven's mother leaves (abandons) her family to focus solely on her responsibilities as a hero. Later, before eventually succumbing to deadly illness, her father sends her back to the care of her mother. Their relation is kept secret, Haven's mother stating that it is for her own safety, and continues to be hidden after her mother dies saving Haven from a villain attack.</p>
+          <p></p>
         </div>
         <div class="grid-item-content">
-          <p style="color:#FFFFFF">A long time ago, humans evolved, and now majority of this world’s population are born with superpowers. First, villains had emerged from the fray, but heroes had countered them soon after, developing into a recognized field for the purpose of making the world a better place.</p>
-          <p style="color:#FFFFFF">Each hero is ranked based on their performance, but popularity is not ignored. Nearly all strive for the coveted position at the very top of the highest ranking, the absolute title of number one.</p>
-          <div class="button"><a href="story.html">LEARN MORE</a></div>
+        </div>
+        <div class="grid-item-content">
+        </div>
+        <div class="grid-item-content">
+          <h3>Perceived by the public to have caused the death of a beloved hero,</h3>
+          <p>Haven faces harassment, ridicule, and hatred throughout her life, made all the more easier with the knowledge of her lack of powers. Living in a small neighbourhood riddled with crime, she is overlooked.</p>
+          <p>She gains a passion for different martial arts, learning from her neighbour, who is a retired boxer. She has always wanted to be a hero, since her mother was one, and her father always explained that "she was busy doing saving the world", and even more so to help others the way she hadn't been. However, she is rejected from the hero industry because of lingering rumours and lack of powers, citing the importance of reputation and well-being.</p>
+        </div>
+        <div class="grid-item-content">
+          <h3>In an interview with a higher-up, she allows Haven to take up the title</h3>
+          <p>If she participates and performs well in an upcoming tournament event; her appearance as an underdog must be impressive enough so admitting her into the industry will be treated as a magnanimous decision and boost their public status.</p>
+<p>Haven is slightly awed by Violet while fighting her in the tournament and pesters her into becoming 'partners in heroics'.</p>
         </div>
       </div>
     </div>
     <div class="container1">
-      <h2 style="text-align:right">OUR HEROES</h2>
-      <div class="container3">
-        <div class="grid-item-hero" style="border:3px solid #D62A27">
-          <img src="city.png" alt="description of image" height="150">
-          <p> HAVEN</p>
-        </div>
+      <h2>RELATIONSHIPS</h2>
+      <div class="container2">
         <div class="grid-item-hero" style="border:3px solid #883BF4">
           <img src="city.png" alt="description of image" height="150">
           <p>VIOLET</p>
@@ -335,20 +369,21 @@
           <img src="city.png" alt="description of image" height="150">
           <p>LUMEN</p>
         </div>
+        <div class="grid-item-hero">
+          <p>
+             rivals to lovers, slowburn, 100k words
+            </p>
+          </div>
+        <div class="grid-item-hero">
+          <p>
+             Pretty great guy, worries about him sometimes, really wanted things to work out between them but she's still thinking about someone else.....
+            </p>
+          </div>
       </div>
     </div>
     <footer>
       <div class="grid-item-content" style="align-content:center">
         <img src="city.png" alt="description of image" height="250px">
-      </div>
-      <div class="grid-item-content">
-        <p style="font-size:1.5em">Navigation</p>
-        <ul>
-          <li><a class="active" href="home.html">HOME</a></li>
-          <li><a href="story.html">STORY</a></li>
-          <li>CAST</li>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
-        </ul>
       </div>
       <div class="grid-item-content">
         <p style="font-size:1.5em">Contact</p>
@@ -359,15 +394,17 @@
         </ul>
       </div>
     </footer>
- <script>
-// Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("myBtn").onclick = function() {myFunction()};
+    <script>
+      // Get the button, and when the user clicks on it, execute myFunction
+      document.getElementById("myBtn").onclick = function () {
+        myFunction()
+      };
 
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("myBtn").classList.toggle("btnshow")
-}
-</script>
+      /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+      function myFunction () {
+        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myBtn").classList.toggle("btnshow")
+      }
+    </script>
   </body>
 </html>

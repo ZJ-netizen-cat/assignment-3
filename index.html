@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <title>DayBreak Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        color: #211E1F;
+        max-width: 1440px;
+        padding: 0;
+      }
+
+      h1 {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5.33em;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4em;
+        color: #883BF4;
+      }
+
+      h3 {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2em;
+        color: #883BF4;
+      }
+
+      nav {
+        width: 1440px;
+        background-color: #211E1F;
+        position: fixed;
+        z-index: 1;
+      }
+
+      nav ul {
+        margin-left: 120px;
+        margin-right: 120px;
+        list-style-type: none;
+        background-color: #211E1F;
+        padding-bottom: 55px;
+      }
+
+      nav ul li {
+        float: right;
+        color: #FFFFFF;
+      }
+
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 30px;
+        padding: 10px;
+        border: 3px solid #211E1F;
+      }
+
+      nav ul li a:hover:not(.active) {
+        background-color: #883BF4
+      }
+
+      nav ul li a.active {
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
+      }
+      
+      #name {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+      }
+
+      .dropbtn {
+        background-color: #211E1F;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #883BF4;
+      }
+
+      .dropdown {
+        position: relative;
+        top: 3px;
+        left: 15px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 958px;
+        background-color: #211E1F;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover:not(.active) {
+        background-color: #883BF4;
+      }
+      .dropdown-content a:hover.active {
+        background-color: #883BF4;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .btnshow {
+        background-color: #883BF4
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: auto;
+        align-content: center;
+        background-color: #211E1F;
+        color: white;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      footer ul li {
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        display: block;
+      }
+
+      footer ul li a {
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+
+      footer ul li a:hover {
+        color: #883BF4;
+        font-weight: 600;
+      }
+
+      .button a {
+        background-color: #883BF4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .button a:hover {
+        background-color: white;
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
+      }
+
+      .containernav {
+        background-color: #211E1F;
+        width: 100%;
+        height: 85px;
+      }
+
+      .containertitle {
+        background-color: #AFAFAF;
+        background-image: url("city.png");
+        padding-top: 200px;
+        padding-bottom: 20px;
+        margin-bottom: 100px;
+        width: 100%;
+      }
+
+      .containerbody {
+        background-image: url("city.png");
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        padding-left: 120px;
+        padding-right: 120px;
+        color: white;
+      }
+
+      .containersub {
+        padding: 0.1px;
+        background-color: #211E1F;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+
+      .container1 {
+        margin-left: 120px;
+        margin-right: 120px;
+        align-items: center;
+        margin-bottom: 100px;
+      }
+
+      .container2 {
+        display: grid;
+        margin-right: 120px;
+        max-width: 1200px;
+        grid-template-columns: 50% 50%;
+        column-gap: 100px;
+        align-content: center;
+        margin-bottom: 100px;
+      }
+
+      .container3 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 100px;
+        align-items: center;
+        max-width: 1200px;
+        margin-bottom: 100px;
+      }
+
+      .grid-item-content {
+        min-height: 150px;
+        max-width: 550px;
+        gap: 30px;
+      }
+
+      .grid-item-hero {
+        background-color: white;
+        min-height: 150px;
+        padding: 30px;
+        gap: 30px;
+        text-align: center;
+      }
+      
+      .rotateworld{
+        rotate: -7.42deg;
+        z-index: -1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containernav">
+      <nav>
+        <ul>
+          <div id="name">
+            <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
+          </div>
+          <li><a href="about.html">ABOUT</a></li>
+          <div class="dropdown">
+            <li id="myBtn" class="dropbtn">CAST</li>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="haven.html">HAVEN</a>
+              <a href="violet.html">VIOLET</a>
+              <a href="lumen.html">LUMEN</a>
+            </div>
+          </div>
+          <li><a href="story.html">STORY</a></li>
+          <li><a class="active" href="home.html">HOME</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="containertitle">
+      <h1>DAYBREAK</h1>
+    </div>
+    <div class="container1">
+      <div class="containersub">
+        <h3 style="color:#FFFFFF">“That is what it means to be a hero!”</h3>
+      </div>
+      <p>In this universe of villains and heroes, almost everyone is born with some kind of superpower. Some use their special abilities for evil, but more use theirs for good, establishing their careers as professional champions of justice. Their performance and popularity determines their rankings in the hero industry, but each and everyone’s goal is the same: to help others.</p>
+      <p>Haven, one of the very few individuals born without any powers, is no different. Despite her perceived disadvantage, she is determined to find a place for herself in a world that would shun her, no matter how much she has to fight for it. Her goal...</p>
+      <h3>To be the #1 hero!</h3>
+    </div>
+    <div class="containerbody">
+      <h2>THE WORLD</h2>
+      <div class="container2">
+        <div class="grid-item-content" style="display:">
+          <div class="rotateworld"><svg width="550" height="440" xmlns="http://www.w3.org/2000/svg">
+            <rect width="550" height="440" x="10" y="10" rx="0" ry="0" fill="#883BF4"/>
+          </svg></div>
+          <img src="city.png" alt="description of image">
+        </div>
+        <div class="grid-item-content">
+          <p>A long time ago, humans evolved, and now majority of this world’s population are born with superpowers. First, villains had emerged from the fray, but heroes had countered them soon after, developing into a recognized field for the purpose of making the world a better place.</p>
+          <p>Each hero is ranked based on their performance, but popularity is not ignored. Nearly all strive for the coveted position at the very top of the highest ranking, the absolute title of number one.</p>
+          <div class="button"><a href="story.html">LEARN MORE</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <h2 style="text-align:right">OUR HEROES</h2>
+      <div class="container3">
+        <div class="grid-item-hero" style="border:3px solid #D62A27">
+          <img src="city.png" alt="description of image" height="150">
+          <p> HAVEN</p>
+        </div>
+        <div class="grid-item-hero" style="border:3px solid #883BF4">
+          <img src="city.png" alt="description of image" height="150">
+          <p>VIOLET</p>
+        </div>
+        <div class="grid-item-hero" style="border:3px solid #F3D13A">
+          <img src="city.png" alt="description of image" height="150">
+          <p>LUMEN</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="grid-item-content" style="align-content:center">
+        <img src="city.png" alt="description of image" height="250px">
+      </div>
+      <div class="grid-item-content">
+        <p style="font-size:1.5em">Contact</p>
+        <ul>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">j43zhan@uwaterloo.ca</li>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">(1)647-891-1288</li>
+          <li>Find these characters on<a href="https://artfight.net/~Jazzies-Stuff"><u>Artfight!</u></a></li>
+        </ul>
+      </div>
+    </footer>
+ <script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myBtn").classList.toggle("btnshow")
+}
+</script>
+  </body>
+</html>
