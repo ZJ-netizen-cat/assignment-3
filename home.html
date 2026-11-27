@@ -50,15 +50,17 @@
       }
 
       nav {
-        width: 1200px;
-        margin-left: 120px;
+        width: 1440px;
         background-color: #211E1F;
+        position: fixed;
       }
 
       nav ul {
+        margin-left: 120px;
+        margin-right: 120px;
         list-style-type: none;
         background-color: #211E1F;
-        padding-top: 18px;
+        padding-bottom: 55px;
       }
 
       nav ul li {
@@ -72,7 +74,7 @@
         text-align: center;
         text-decoration: none;
         margin-left: 30px;
-        padding: 10px 10px;
+        padding: 10px;
         border: 3px solid #211E1F;
       }
 
@@ -85,6 +87,53 @@
       nav ul li a.active {
         color: #883BF4;
         border: 3px solid #883BF4;
+        font-weight: 600;
+      }
+
+      .dropbtn {
+        background-color: #211E1F;
+        color: white;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        left: 950px;
+        top: 52px;
+        background-color: #211E1F;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {
+  background-color: #883BF4;
+}
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+     .dropdown:hover:not(.active) {
+        color: #883BF4;
+       background-color: #883BF4;
+        font-weight: 600;
+      }
+
+      .dropdown a.active {
+        color: #883BF4;
+        background-color: #883BF4;
         font-weight: 600;
       }
 
@@ -233,7 +282,14 @@
             <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
           </div>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
+          <div class="dropdown">
+            <li class="dropbtn"><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
+            <div class="dropdown-content">
+              <a href="#">HAVEN</a>
+              <a href="#">VIOLET</a>
+              <a href="#">LUMEN</a>
+            </div>
+          </div>
           <li><a href="story.html">STORY</a></li>
           <li><a class="active" href="home.html">HOME</a></li>
         </ul>
@@ -291,7 +347,7 @@
         <ul>
           <li><a class="active" href="home.html">HOME</a></li>
           <li><a href="story.html">STORY</a></li>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
+          <li>CAST</li>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
         </ul>
       </div>
