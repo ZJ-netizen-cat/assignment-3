@@ -55,18 +55,18 @@
         background-color: #211E1F;
       }
 
-      ul {
+      nav ul {
         list-style-type: none;
         background-color: #211E1F;
         padding-top: 18px;
       }
 
-      ul li {
+      nav ul li {
         float: right;
         color: #FFFFFF;
       }
 
-      ul li a {
+      nav ul li a {
         display: block;
         color: white;
         text-align: center;
@@ -75,15 +75,15 @@
         padding: 10px 10px;
       }
 
-      ul li a:hover {
+      nav ul li a:hover:not(.active) {
         color: #883BF4;
         border: 3px solid #883BF4;
         font-weight: 600;
       }
 
-      ul li a.active {
+      nav ul li a.active {
         color: #883BF4;
-        border: 2px solid #883BF4;
+        border: 3px solid #883BF4;
         font-weight: 600;
       }
 
@@ -92,6 +92,43 @@
         font-weight: 400;
         font-style: normal;
         font-size: 1.5em;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 100px;
+        align-items: center;
+        background-color: #211E1F;
+        color: white;
+        padding: 30px;
+      }
+
+      footer ul {
+        list-style-type: none;
+      }
+
+      footer ul li {
+        color: #FFFFFF;
+      }
+
+      footer ul li a {
+        display: block;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+
+      footer ul li a:hover:not(.active) {
+        color: #883BF4;
+        font-weight: 600;
+      }
+
+      footer ul li a.active {
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
       }
 
       .button a {
@@ -148,6 +185,7 @@
         margin-left: 120px;
         margin-right: 120px;
         align-items: center;
+        margin-bottom: 100px;
       }
 
       .container2 {
@@ -155,14 +193,16 @@
         grid-template-columns: auto auto;
         gap: 100px;
         align-content: center;
+        margin-bottom: 100px;
       }
-      
+
       .container3 {
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 100px;
         align-items: center;
         max-width: 1200px;
+        margin-bottom: 100px;
       }
 
       .grid-item-content {
@@ -170,14 +210,13 @@
         max-width: 550px;
         gap: 30px;
       }
-      
+
       .grid-item-hero {
-        background-color: red;
+        background-color: white;
         padding: 30px;
         gap: 30px;
-        align-content: center;
+        text-align: center;
       }
-      
     </style>
   </head>
   <body>
@@ -187,7 +226,7 @@
           <div id="name">
             <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
           </div>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_float">HOME</a></li>
+          <li><a a class="active" href="home.html">HOME</a></li>
           <li><a href="story.html">STORY</a></li>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
           <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
@@ -221,18 +260,32 @@
       </div>
     </div>
     <div class="container1">
-    <h2 style="text-align:right">OUR HEROES</h2>
+      <h2 style="text-align:right">OUR HEROES</h2>
       <div class="container3">
-        <div class="grid-item-hero">
+        <div class="grid-item-hero" style="border:3px solid #D62A27">
           <p>HAVEN</p>
         </div>
-        <div class="grid-item-hero">
+        <div class="grid-item-hero" style="border:3px solid #883BF4">
           <p>VIOLET</p>
         </div>
-        <div class="grid-item-hero">
+        <div class="grid-item-hero" style="border:3px solid #F3D13A">
           <p>LUMEN</p>
         </div>
       </div>
     </div>
+    <footer>
+      <div class="grid-item-content">
+        <img src="city.png" alt="description of image" height="250px">
+      </div>
+      <div class="grid-item-content">
+        <p style="font-size:1.5em">Navigation</p>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="story.html">STORY</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
+          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
