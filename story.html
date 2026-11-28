@@ -2,7 +2,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8">
-    <title>DayBreak Homepage</title>
+    <title>DayBreak Story</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
@@ -49,16 +49,19 @@
         color: #883BF4;
       }
 
-      nav {
-        width: 1200px;
-        margin-left: 120px;
+     nav {
+        width: 1440px;
         background-color: #211E1F;
+        position: fixed;
+        z-index: 1;
       }
 
       nav ul {
+        margin-left: 120px;
+        margin-right: 120px;
         list-style-type: none;
         background-color: #211E1F;
-        padding-top: 18px;
+        padding-bottom: 55px;
       }
 
       nav ul li {
@@ -72,14 +75,12 @@
         text-align: center;
         text-decoration: none;
         margin-left: 30px;
-        padding: 10px 10px;
+        padding: 10px;
         border: 3px solid #211E1F;
       }
 
       nav ul li a:hover:not(.active) {
-        color: #883BF4;
-        border: 3px solid #883BF4;
-        font-weight: 600;
+        background-color: #883BF4
       }
 
       nav ul li a.active {
@@ -287,13 +288,13 @@
           <div class="dropdown">
             <li id="myBtn" class="dropbtn">CAST</li>
             <div id="myDropdown" class="dropdown-content">
-              <a href="#">HAVEN</a>
-              <a href="#">VIOLET</a>
-              <a href="#">LUMEN</a>
+              <a href="haven.html">HAVEN</a>
+              <a href="violet.html">VIOLET</a>
+              <a href="lumen.html">LUMEN</a>
             </div>
           </div>
-          <li><a href="story.html">STORY</a></li>
-          <li><a class="active" href="home.html">HOME</a></li>
+          <li><a class="active" href="story.html">STORY</a></li>
+          <li><a href="home.html">HOME</a></li>
         </ul>
       </nav>
     </div>
@@ -330,15 +331,6 @@
     <footer>
       <div class="grid-item-content" style="align-content:center">
         <img src="city.png" alt="description of image" height="250px">
-      </div>
-      <div class="grid-item-content">
-        <p style="font-size:1.5em">Navigation</p>
-        <ul>
-          <li><a href="home.html">HOME</a></li>
-          <li><a class="active" href="story.html">STORY</a></li>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">CAST</a></li>
-          <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_flex">ABOUT</a></li>
-        </ul>
       </div>
       <div class="grid-item-content">
         <p style="font-size:1.5em">Contact</p>
