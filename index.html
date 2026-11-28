@@ -88,7 +88,7 @@
         border: 3px solid #883BF4;
         font-weight: 600;
       }
-      
+
       #name {
         font-family: "Audiowide", sans-serif;
         font-weight: 400;
@@ -135,6 +135,7 @@
       .dropdown-content a:hover:not(.active) {
         background-color: #883BF4;
       }
+
       .dropdown-content a:hover.active {
         background-color: #883BF4;
       }
@@ -263,6 +264,21 @@
         margin-bottom: 100px;
       }
 
+      .container3 a {
+        text-decoration: none;
+        color: #211E1F;
+      }
+      
+      .container3 a:hover{
+        text-decoration: none;
+        color: white;
+        background-color: #D62A27;
+      }
+
+      #violet {
+        background-color: #883BF4;
+      }
+
       .grid-item-content {
         min-height: 150px;
         max-width: 550px;
@@ -270,14 +286,13 @@
       }
 
       .grid-item-hero {
-        background-color: white;
         min-height: 150px;
         padding: 30px;
         gap: 30px;
         text-align: center;
       }
-      
-      .rotateworld{
+
+      .rotateworld {
         rotate: -7.42deg;
         z-index: -1;
       }
@@ -320,8 +335,8 @@
       <div class="container2">
         <div class="grid-item-content" style="display:">
           <div class="rotateworld"><svg width="550" height="440" xmlns="http://www.w3.org/2000/svg">
-            <rect width="550" height="440" x="10" y="10" rx="0" ry="0" fill="#883BF4"/>
-          </svg></div>
+              <rect width="550" height="440" x="10" y="10" rx="0" ry="0" fill="#883BF4" />
+            </svg></div>
           <img src="city.png" alt="description of image">
         </div>
         <div class="grid-item-content">
@@ -334,18 +349,24 @@
     <div class="container1">
       <h2 style="text-align:right">OUR HEROES</h2>
       <div class="container3">
-        <div class="grid-item-hero" style="border:3px solid #D62A27">
-          <img src="city.png" alt="description of image" height="150">
-          <p> HAVEN</p>
-        </div>
+        <a href="haven.html">
+          <div class="grid-item-hero" style="border:3px solid #D62A27">
+            <img src="city.png" alt="description of image" height="150">
+            <p>HAVEN</p>
+          </div>
+        </a>
+        <a href="violet.html">
         <div class="grid-item-hero" style="border:3px solid #883BF4">
           <img src="city.png" alt="description of image" height="150">
           <p>VIOLET</p>
         </div>
+        </a>
+        <a href="lumen.html">
         <div class="grid-item-hero" style="border:3px solid #F3D13A">
           <img src="city.png" alt="description of image" height="150">
           <p>LUMEN</p>
         </div>
+        </a>
       </div>
     </div>
     <footer>
@@ -361,15 +382,17 @@
         </ul>
       </div>
     </footer>
- <script>
-// Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("myBtn").onclick = function() {myFunction()};
+    <script>
+      // Get the button, and when the user clicks on it, execute myFunction
+      document.getElementById("myBtn").onclick = function () {
+        myFunction()
+      };
 
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-  document.getElementById("myBtn").classList.toggle("btnshow")
-}
-</script>
+      /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+      function myFunction () {
+        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myBtn").classList.toggle("btnshow")
+      }
+    </script>
   </body>
 </html>

@@ -1,1 +1,405 @@
-<h1>hi3</h1>
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <title>DayBreak Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+
+    <style>
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+        color: #211E1F;
+        max-width: 1440px;
+        padding: 0;
+      }
+
+      h1 {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 5.33em;
+        text-align: right;
+      }
+
+      h2 {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4em;
+        color: #F3D13A;
+      }
+
+      h3 {
+        font-family: "Sofia Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2em;
+        color: #F3D13A;
+      }
+
+      h4 {
+        background-color: #211E1F;
+        color: white;
+        font-weight: 600;
+        padding: 10px 15px;
+      }
+
+      nav {
+        width: 1440px;
+        background-color: #211E1F;
+        position: fixed;
+      }
+
+      nav ul {
+        margin-left: 120px;
+        margin-right: 120px;
+        list-style-type: none;
+        background-color: #211E1F;
+        padding-bottom: 55px;
+      }
+
+      nav ul li {
+        float: right;
+        color: #FFFFFF;
+      }
+
+      nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        margin-left: 30px;
+        padding: 10px;
+        border: 3px solid #211E1F;
+      }
+
+      nav ul li a:hover:not(.active) {
+        background-color: #883BF4;
+        color: white;
+      }
+
+      nav ul li a.active {
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
+      }
+
+      #name {
+        font-family: "Audiowide", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.5em;
+      }
+
+      .dropbtn {
+        background-color: #211E1F;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .dropbtn:hover,
+      .dropbtn:focus {
+        background-color: #883BF4;
+        color: white;
+      }
+
+      .dropdown {
+        position: relative;
+        top: 3px;
+        left: 15px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 958px;
+        background-color: #211E1F;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      .dropdown-content a {
+        color: white;
+        padding: 20px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #883BF4;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .btnshow {
+        background-color: #883BF4;
+        color: white;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: auto;
+        align-content: center;
+        background-color: #211E1F;
+        color: white;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      footer ul li {
+        color: #FFFFFF;
+        margin-bottom: 30px;
+        display: block;
+      }
+
+      footer ul li a {
+        color: white;
+        text-align: left;
+        text-decoration: none;
+        margin-bottom: 30px;
+      }
+
+      footer ul li a:hover {
+        color: #883BF4;
+        font-weight: 600;
+      }
+
+      /*.button a {
+        background-color: #883BF4;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .button a:hover {
+        background-color: white;
+        color: #883BF4;
+        border: 3px solid #883BF4;
+        font-weight: 600;
+      }*/
+
+      .containernav {
+        background-color: #211E1F;
+        width: 100%;
+        height: 85px;
+      }
+
+      .containerbody {
+        background-image: url("city.png");
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        padding-left: 120px;
+        padding-right: 120px;
+        color: white;
+      }
+
+      .containersub {
+        padding: 0.1px;
+        background-color: #211E1F;
+        text-align: center;
+        margin-bottom: 100px;
+      }
+
+      .container1 {
+        margin-left: 120px;
+        margin-right: 120px;
+        align-items: center;
+        margin-bottom: 100px;
+      }
+
+      .container2 {
+        display: grid;
+        margin-right: 120px;
+        max-width: 1200px;
+        grid-template-columns: 50% 50%;
+        gap: 100px;
+        align-content: center;
+        margin-bottom: 100px;
+      }
+
+      .container3 {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        gap: 30px;
+        align-items: center;
+        max-width: 1200px;
+        margin-left: 120px;
+        margin-right: 120px;
+      }
+
+      .grid-item-content {
+        min-height: 150px;
+        max-width: 550px;
+        gap: 30px;
+      }
+
+      .grid-item-hero {
+        background-color: white;
+        min-height: 150px;
+        padding: 30px;
+        gap: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containernav">
+      <nav>
+        <ul>
+          <div id="name">
+            <li style="float:left" body="font-family:Audiowide">DAYBREAK</li>
+          </div>
+          <li><a href="about.html">ABOUT</a></li>
+          <div class="dropdown">
+            <li id="myBtn" class="dropbtn" style="border:3px solid #883BF4">CAST</li>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="haven.html">HAVEN</a>
+              <a href="violet.html">VIOLET</a>
+              <a class="active" href="lumen.html">LUMEN</a>
+            </div>
+          </div>
+          <li><a href="story.html">STORY</a></li>
+          <li><a href="home.html">HOME</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="containerbody">
+      <div class="container3">
+        <div class="grid-item-content">
+          <h4 style="width:4.9em;background-color:#F3D13A;color:#211E1F">RADIANT</h4>
+          <h4 style="width:7.4em;background-color:#F3D13A;color:#211E1F">FINESSE</h4>
+          <h4 style="width:4.2em;background-color:#F3D13A;color:#211E1F">SUPERNOVA</h4>
+        </div>
+      </div>
+      <h1 style="color:#211E1F">LUMEN</h1>
+      <h4 style="text-align:right">HERO NAME</h4>
+      <h3 style="font-size:4em;text-align:right">SOLARIS</h3>
+    </div>
+    <div class="container1">
+      <div class="containersub">
+        <h3 style="color:#FFF6C0">The prodigy hero, worshipped like the sun itself</h3>
+      </div>
+       <h2>ABOUT</h2>
+      <div class="container2">
+        <div class="grid-item-content">
+          <h4>POWER</h4>
+          <p>Absorbs and expels light, adopts and controls their properties (heat, concussive force)</p>
+          <h4>ABILITIES</h4>
+          <p>Emit beams of light primarily from his hands and eyes, eventual super speed in flashes and supercharged leaps, powers are sustained through other sources of light (sunlight is best), body can be sustained through only sunlight for short periods of time</p>
+          <h4>LIKES</h4>
+          <p>Privacy, heights, the sky, cats</p>
+          <h4>DISLIKES</h4>
+          <p>Taking breaks, rainy days, the colour of his hair</p>
+        </div>
+        <div class="grid-item-content" style="align-content:center">
+          <img src="city.png" alt="description of image" width="550">
+        </div>
+      </div>
+      <img src="lumensheet.png" alt="description of image" width="100%">
+      <h3>Kind, romantic, infinitely charismatic.</h3>
+      <p>Anyone would have a hard time catching Lumen without a serene smile on his face, always aiming to please. It seems like little fazes the heroes' poster boy, but one of these days, he's going to hit his limit.</p>
+      <p>Despite falling in love very easily, he doesn't open up about himself at all, which causes nearly all of his relationships to fall through, no matter his deep sincerity to love his partners and desire to be loved back. Lumen wants to become a highly ranked hero for various reasons, but most prominently is for redemption. His hair was originally black, but as he used powers more, it got lighter.</p>
+    </div>
+    <div class="containerbody">
+      <h2 style="text-align:right">BACKSTORY</h2>
+      <div class="container2">
+        <div class="grid-item-content">
+          <h3>Lumen's stepfather sees his potential as a great hero when his powers emerge as a child.</h3>
+          <p>As his birth father dies before he is born. He puts Lumen through countless experiments to test the true extent of his powers and harsh training to push his limits. Lumen doesn't see anyone other than his stepfather and occasionally his still grieving mother that much, including his older brother, staying in the basement and skipping school most days. </p>
+        </div>
+        <div class="grid-item-content">
+        </div>
+        <div class="grid-item-content">
+        </div>
+        <div class="grid-item-content">
+          <h3>His brother resolves to get them out of this house for good</h3>
+          <p>which takes a lot of convincing for Lumen since he doesn't think they should, having been lectured constantly about his stepfather's efforts into making him stronger. They sneak down the stairs one free night with their baby sister but find their stepfather waiting below, enraged.</p>
+          <p>The confrontation escalates, and Lumen loses control of his powers and blasts their stepfather out the door, igniting a fire in the house from the heat. Their awakened mother pushes his brother and sister out before the fire completely engulfs the house. Lumen continues to brutalize his stepfather's corpse in a dissociative state and burns half of his brother's face and body as he stops him. </p>
+        </div>
+        <div class="grid-item-content">
+          <h3>Lumen saves a crowd of people from falling debris caused by a desperate villain on the run</h3>
+          <p>While he is walking outside to calm himself down after his brother blames him for all that happened after getting taken to the hospital. He gets offers from multiple hero program schools, but takes the one from a former villain who is more willing to concede to his demands; his association/publicity for his siblings' guaranteed safety and security. </p>
+<p>With powers so advanced for his age, he is branded 'the next top hero' and the industry's golden boy. He defeats Haven in the tournament, but is impressed with her perseverance.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container1">
+      <h2>RELATIONSHIPS</h2>
+      <div class="container2">
+        <div class="grid-item-hero" style="border:3px solid #D62A27">
+          <img src="city.png" alt="description of image" height="150">
+          <p>HAVEN</p>
+        </div>
+        <div class="grid-item-hero" style="border:3px solid #883BF4">
+          <img src="city.png" alt="description of image" height="150">
+          <p>VIOLET</p>
+        </div>
+        <div class="grid-item-content">
+          <p>Always impressed by her, understands why things didn't work out and is used to it, supports her goal but won't back down from his own.</p>
+          </div>
+        <div class="grid-item-content">
+          <p>Wary of her, knows she's hiding something but won't push. An effective hero, if a little too aggressive. Envies her and Haven's relationship, how easy it seems for them.</p>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <div class="grid-item-content" style="align-content:center">
+        <img src="city.png" alt="description of image" height="250px">
+      </div>
+      <div class="grid-item-content">
+        <p style="font-size:1.5em">Contact</p>
+        <ul>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">j43zhan@uwaterloo.ca</li>
+          <li><img src="city.png" alt="description of image" height="15" style="margin-right:20px">(1)647-891-1288</li>
+          <li>Find these characters on<a href="https://artfight.net/~Jazzies-Stuff"><u>Artfight!</u></a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      // Get the button, and when the user clicks on it, execute myFunction
+      document.getElementById("myBtn").onclick = function () {
+        myFunction()
+      };
+
+      /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+      function myFunction () {
+        document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myBtn").classList.toggle("btnshow")
+      }
+    </script>
+  </body>
+</html>
